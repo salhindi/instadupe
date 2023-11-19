@@ -161,3 +161,14 @@ Processing by PostsController#index as JSON
 Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1566)
 
 
+Started GET "/posts.json" for ::1 at 2023-11-19 03:19:12 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as JSON
+  Rendering posts/index.json.jbuilder
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.json.jbuilder:1
+  Rendered collection of posts/_post.json.jbuilder [1 times] (Duration: 0.7ms | Allocations: 479)
+  Rendered posts/index.json.jbuilder (Duration: 38.5ms | Allocations: 13166)
+Completed 200 OK in 58ms (Views: 25.9ms | ActiveRecord: 15.8ms | Allocations: 23159)
+
+
