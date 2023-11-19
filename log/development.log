@@ -13,3 +13,151 @@ Migrating to CreatePosts (20231119072653)
   [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4660129878231518040)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-11-19 00:33:40 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 376)
+Completed 200 OK in 19ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 7841)
+
+
+Started GET "/" for ::1 at 2023-11-19 00:34:22 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/" for ::1 at 2023-11-19 00:34:25 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 192)
+
+
+Started GET "/" for ::1 at 2023-11-19 00:35:25 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 376)
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 4234)
+
+
+Started GET "/" for ::1 at 2023-11-19 00:36:02 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 192)
+
+
+Started GET "/" for ::1 at 2023-11-19 00:37:21 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/" for ::1 at 2023-11-19 00:45:39 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 376)
+Completed 200 OK in 11ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4234)
+
+
+Started GET "/" for ::1 at 2023-11-19 01:09:10 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.1ms | Allocations: 376)
+Completed 200 OK in 25ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 4234)
+
+
+Started GET "/" for ::1 at 2023-11-19 01:32:58 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 376)
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 4234)
+
+
+Started GET "/posts" for ::1 at 2023-11-19 01:33:04 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 4035)
+  Rendered layout layouts/application.html.erb (Duration: 352.8ms | Allocations: 103188)
+Completed 200 OK in 380ms (Views: 355.5ms | ActiveRecord: 4.8ms | Allocations: 113082)
+
+
+Started GET "/" for ::1 at 2023-11-19 01:33:11 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/soama/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 192)
+
+
+Started GET "/posts/new" for ::1 at 2023-11-19 01:36:42 -0800
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 43.5ms | Allocations: 5213)
+  Rendered posts/new.html.erb within layouts/application (Duration: 48.2ms | Allocations: 5543)
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 7304)
+Completed 200 OK in 92ms (Views: 56.7ms | ActiveRecord: 13.0ms | Allocations: 17630)
+
+
+Started POST "/posts" for ::1 at 2023-11-19 01:36:54 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Hello World", "body"=>"From me"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+  [1m[36mPost Create (3.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Hello World"], ["body", "From me"], ["created_at", "2023-11-19 09:36:54.726579"], ["updated_at", "2023-11-19 09:36:54.726579"]]
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 12ms (ActiveRecord: 6.0ms | Allocations: 3459)
+
+
+Started GET "/posts/1" for ::1 at 2023-11-19 01:36:54 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 1.3ms | Allocations: 183)
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1231)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2731)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.8ms | Allocations: 5761)
+
+
+Started GET "/posts" for ::1 at 2023-11-19 01:36:59 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1059)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2562)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.9ms | Allocations: 2878)
+
+
+Started GET "/posts,json" for ::1 at 2023-11-19 01:37:08 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/posts,json"):
+  
+Started GET "/posts.json" for ::1 at 2023-11-19 01:37:25 -0800
+Processing by PostsController#index as JSON
+  Rendering posts/index.json.jbuilder
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.json.jbuilder:1
+  Rendered collection of posts/_post.json.jbuilder [1 times] (Duration: 0.7ms | Allocations: 307)
+  Rendered posts/index.json.jbuilder (Duration: 2.8ms | Allocations: 1105)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1566)
+
+
