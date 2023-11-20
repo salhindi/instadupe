@@ -172,3 +172,153 @@ Processing by PostsController#index as JSON
 Completed 200 OK in 58ms (Views: 25.9ms | ActiveRecord: 15.8ms | Allocations: 23159)
 
 
+Started GET "/posts" for ::1 at 2023-11-19 14:46:09 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 0.4ms | Allocations: 224)
+  Rendered posts/index.html.erb within layouts/application (Duration: 52.8ms | Allocations: 14648)
+  Rendered layout layouts/application.html.erb (Duration: 103.9ms | Allocations: 33955)
+Completed 200 OK in 129ms (Views: 92.5ms | ActiveRecord: 15.3ms | Allocations: 43780)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-11-19 14:46:09 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/posts/1" for ::1 at 2023-11-19 14:46:12 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 717)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2226)
+Completed 200 OK in 9ms (Views: 3.6ms | ActiveRecord: 1.7ms | Allocations: 4832)
+
+
+Started GET "/posts" for ::1 at 2023-11-19 14:46:16 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 835)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2338)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.5ms | Allocations: 2570)
+
+
+Started GET "/posts/new" for ::1 at 2023-11-19 14:46:19 -0800
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.2ms | Allocations: 1897)
+  Rendered posts/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3676)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 4000)
+
+
+Started POST "/posts" for ::1 at 2023-11-19 14:46:40 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Hello! Number 2!", "body"=>"I hope this works."}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+  [1m[36mPost Create (6.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Hello! Number 2!"], ["body", "I hope this works."], ["created_at", "2023-11-19 22:46:40.296272"], ["updated_at", "2023-11-19 22:46:40.296272"]]
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 15ms (ActiveRecord: 10.7ms | Allocations: 3343)
+
+
+Started GET "/posts/2" for ::1 at 2023-11-19 14:46:40 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:64:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 522)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2031)
+Completed 200 OK in 10ms (Views: 4.5ms | ActiveRecord: 4.7ms | Allocations: 2666)
+
+
+Started GET "/posts" for ::1 at 2023-11-19 14:46:43 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered posts/_post.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 957)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2462)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 2687)
+
+
+Started GET "/posts" for ::1 at 2023-11-19 15:15:16 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 0.8ms | Allocations: 224)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered posts/index.html.erb within layouts/application (Duration: 105.0ms | Allocations: 14752)
+  Rendered layout layouts/application.html.erb (Duration: 230.7ms | Allocations: 34101)
+Completed 200 OK in 268ms (Views: 220.3ms | ActiveRecord: 17.5ms | Allocations: 43926)
+
+
+Started GET "/" for ::1 at 2023-11-19 15:59:09 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 1.1ms | Allocations: 224)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered posts/index.html.erb within layouts/application (Duration: 103.3ms | Allocations: 13553)
+  Rendered layout layouts/application.html.erb (Duration: 230.5ms | Allocations: 33272)
+Completed 200 OK in 278ms (Views: 207.6ms | ActiveRecord: 29.0ms | Allocations: 43098)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-11-19 15:59:09 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2023-11-19 16:13:04 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 1.6ms | Allocations: 222)
+  Rendered posts/_post.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered posts/index.html.erb within layouts/application (Duration: 141.9ms | Allocations: 14745)
+  Rendered layout layouts/application.html.erb (Duration: 292.6ms | Allocations: 34018)
+Completed 200 OK in 350ms (Views: 278.6ms | ActiveRecord: 22.9ms | Allocations: 43843)
+
+
+Started GET "/posts" for ::1 at 2023-11-19 16:13:12 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 975)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2478)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 1.5ms | Allocations: 2712)
+
+

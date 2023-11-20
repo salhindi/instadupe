@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { produce } from "immer";
-import { RootState } from "../../app/store"
-import { fetchPosts } from './postAPI'
+import { RootState } from "../../app/store";
+import { fetchPosts } from './postAPI';
 
 export enum Statuses {
   Initial = "Not Fetched",
@@ -68,9 +68,6 @@ export const postSlice = createSlice({
           draftState.status = Statuses.Error;
         })
       })
-
-
-
   }
 })
 

@@ -8,9 +8,10 @@ export async function fetchPosts() {
         headers: {
             "Content-Type": "application/json",
         },
-    }).then((response) => response.json())
-    .catch((error) => {
-        console.log("error: ", error);
-        return {} as PostsState;
     })
+    .then((response) => response.json())
+    .catch((error) => {
+        console.log("Error: ", error);
+        return {} as PostsState;
+    });
 }
