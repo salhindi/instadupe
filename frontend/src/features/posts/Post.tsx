@@ -26,8 +26,8 @@ function Post(props:any) {
         <div className="col-2">
           {/** button */}
         </div>
-``    </div>
- `` </div>
+    </div>
+  </div>;
 }
 
 export default Post;

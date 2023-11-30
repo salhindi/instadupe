@@ -10,6 +10,7 @@ export enum Statuses {
   Deleted = "Deleted",
   Error = "Error"
 }
+
 export interface PostState {
   id?: number;
   title?: string;
@@ -29,9 +30,9 @@ const initialState: PostsState = {
     {
       id:0,
       title: "",
-      body:"",
-      created_at:"",
-      updated_at:"",
+      body: "",
+      created_at: "",
+      updated_at: "",
     }
   ],
   status: Statuses.Initial

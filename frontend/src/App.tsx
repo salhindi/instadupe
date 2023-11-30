@@ -3,7 +3,7 @@ import Posts from './features/posts/Posts';
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <Posts />
     </div>
   );
