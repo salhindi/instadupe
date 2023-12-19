@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { useAppSelector } from '../../app/hooks';
+import { useAppSelector } from "../../app/hooks";
 import { fetchPostsAsync, selectPosts, selectStatus, Statuses } from './postSlice';
-import { AppDispatch } from '../../app/store';
+
 import Post from './Post';
 import PostForm from './PostForm';
 
 function Posts() {
   const posts = useAppSelector(selectPosts);
   const status = useAppSelector(selectStatus);
-  const dispatch = useDispatch<AppDispatch>();
-
+  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchPostsAsync());
   }, [dispatch])
